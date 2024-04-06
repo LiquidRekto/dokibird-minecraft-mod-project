@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "dokibird-minecraft-mod",
+	"version": "${version}",
+	"name": "Dokibird Minecraft Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dokibird-minecraft-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dragoons.DokibirdMinecraftMod"
+		],
+		"fabric-datagen": [
+			"net.dragoons.DokibirdMinecraftModDataGenerator"
+		]
+	},
+	"mixins": [
+		"dokibird-minecraft-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
