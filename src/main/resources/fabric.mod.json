@@ -18,6 +18,9 @@
 		"main": [
 			"net.dragoons.dokimod.DokibirdMinecraftMod"
 		],
+		"client": [
+			"net.dragoons.dokimod.DokibirdMinecraftModClient"
+		],
 		"fabric-datagen": [
 			"net.dragoons.dokimod.DokibirdMinecraftModDataGenerator"
 		]
