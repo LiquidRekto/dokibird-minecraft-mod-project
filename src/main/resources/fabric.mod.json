@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.dragoons.DokibirdMinecraftMod"
+			"net.dragoons.dokimod.DokibirdMinecraftMod"
 		],
 		"fabric-datagen": [
-			"net.dragoons.DokibirdMinecraftModDataGenerator"
+			"net.dragoons.dokimod.DokibirdMinecraftModDataGenerator"
 		]
 	},
 	"mixins": [

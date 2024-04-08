@@ -1,4 +1,4 @@
-package net.dragoons;
+package net.dragoons.dokimod;
 
 import net.fabricmc.api.ModInitializer;
 

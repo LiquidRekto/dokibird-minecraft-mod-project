@@ -1,4 +1,4 @@
-package net.dragoons.mixin;
+package net.dragoons.dokimod.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
