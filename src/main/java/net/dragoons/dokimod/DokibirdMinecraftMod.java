@@ -1,6 +1,7 @@
 package net.dragoons.dokimod;
 
 import net.dragoons.dokimod.constants.Mod;
+import net.dragoons.dokimod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,7 +18,9 @@ public class DokibirdMinecraftMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		LOGGER.info("Initializing Dokibird Minecraft Mod...");
+		
+		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }

@@ -3,6 +3,17 @@ package net.dragoons.dokimod.constants;
 public class ItemIds {
 
     // =========================
+    // FOOD                  |||
+    // =========================
+
+    // =========================
+    // INGREDIENTS           |||
+    // =========================
+
+    // DRAGOON-RELATED
+    public static final String ITEM_DRAGOON_FEATHER = "dragoon-feather";
+
+    // =========================
     // SPAWN EGGS            |||
     // =========================
 
