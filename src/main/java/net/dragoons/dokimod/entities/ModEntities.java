@@ -1,5 +1,6 @@
 package net.dragoons.dokimod.entities;
 
+import net.dragoons.dokimod.DokibirdMinecraftMod;
 import net.dragoons.dokimod.constants.EntityIds;
 import net.dragoons.dokimod.constants.Mod;
 import net.dragoons.dokimod.entities.custom.DragoonEntity;
@@ -20,4 +21,8 @@ public class ModEntities {
                     .dimensions(EntityDimensions.fixed(1f, 1f))
                     .build()
     );
+
+    public static void registerModEntities() {
+        DokibirdMinecraftMod.LOGGER.info("Registering Entities for " + Mod.MOD_ID);
+    }
 }

@@ -29,11 +29,11 @@ public class DragoonEntity extends AnimalEntity {
         // For swimming
         this.goalSelector.add(0, new SwimGoal(this));
         // For breeding
-        this.goalSelector.add(1, new AnimalMateGoal(this, 1.150));
+        this.goalSelector.add(1, new AnimalMateGoal(this, 0.4));
         // For feeding
-        this.goalSelector.add(2, new TemptGoal(this, 1.250, Ingredient.ofItems(Items.WHEAT_SEEDS), false));
+        this.goalSelector.add(2, new TemptGoal(this, 0.3, Ingredient.ofItems(Items.WHEAT_SEEDS), false));
         // For following player (?)
-        this.goalSelector.add(3, new FollowParentGoal(this, 1.150));
+        this.goalSelector.add(3, new FollowParentGoal(this, 0.2));
         // For just wandering around and chill
         this.goalSelector.add(4, new WanderAroundFarGoal(this, 10));
         // For looking at player if close
@@ -45,7 +45,7 @@ public class DragoonEntity extends AnimalEntity {
     public static DefaultAttributeContainer.Builder createDragoonAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.1f)
                 .add(EntityAttributes.GENERIC_ARMOR, 0.1f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 1);
 

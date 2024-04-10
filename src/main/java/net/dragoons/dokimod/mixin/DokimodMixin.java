@@ -14,12 +14,15 @@ public class DokimodMixin {
 	@Inject(at = @At("HEAD"), method = "loadWorld")
 	private void init(CallbackInfo info) {
 		// This code is injected into the start of MinecraftServer.loadWorld()V
+		/*
 		ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
 			ChatLogger.loadPlayer(MinecraftClient.getInstance().player);
 			ChatLogger.log("Welcome to Dokibird mod!");
 			ChatLogger.warn("This is for warning message");
 			ChatLogger.error("This is for error message");
 		});
+		*/
+
 	}
 
 }

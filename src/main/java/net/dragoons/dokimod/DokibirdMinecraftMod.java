@@ -1,10 +1,13 @@
 package net.dragoons.dokimod;
 
 import net.dragoons.dokimod.constants.Mod;
+import net.dragoons.dokimod.entities.ModEntities;
+import net.dragoons.dokimod.entities.custom.DragoonEntity;
 import net.dragoons.dokimod.item.ModItems;
 import net.dragoons.dokimod.util.ChatLogger;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.network.message.SentMessage;
 import net.minecraft.server.MinecraftServer;
 import org.slf4j.Logger;
@@ -25,5 +28,9 @@ public class DokibirdMinecraftMod implements ModInitializer {
 		
 		ModItems.registerModItems();
 
+		// Loading entities
+		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_DRAGOON, DragoonEntity.createDragoonAttributes());
+
+		ModEntities.registerModEntities();
 	}
 }
