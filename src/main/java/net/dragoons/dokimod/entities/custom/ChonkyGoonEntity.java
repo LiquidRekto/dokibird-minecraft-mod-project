@@ -16,12 +16,12 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class DragoonEntity extends AnimalEntity {
+public class ChonkyGoonEntity extends AnimalEntity {
 
     public static final double NORMAL_SPEED = 1.150;
     public static final double PANIC_SPEED = 1.5;
 
-    public DragoonEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public ChonkyGoonEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -55,6 +55,6 @@ public class DragoonEntity extends AnimalEntity {
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntities.ENTITY_DRAGOON.create(world);
+        return ModEntities.ENTITY_CHONKY_GOON.create(world);
     }
 }

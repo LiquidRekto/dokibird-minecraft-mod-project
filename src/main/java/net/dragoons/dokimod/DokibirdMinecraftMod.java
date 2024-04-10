@@ -2,6 +2,7 @@ package net.dragoons.dokimod;
 
 import net.dragoons.dokimod.constants.Mod;
 import net.dragoons.dokimod.entities.ModEntities;
+import net.dragoons.dokimod.entities.custom.ChonkyGoonEntity;
 import net.dragoons.dokimod.entities.custom.DragoonEntity;
 import net.dragoons.dokimod.item.ModItems;
 import net.dragoons.dokimod.util.ChatLogger;
@@ -29,8 +30,8 @@ public class DokibirdMinecraftMod implements ModInitializer {
 		ModItems.registerModItems();
 
 		// Loading entities
-		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_DRAGOON, DragoonEntity.createDragoonAttributes());
-
+		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_DRAGOON, DragoonEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_CHONKY_GOON, ChonkyGoonEntity.createAttributes());
 		ModEntities.registerModEntities();
 	}
 }
