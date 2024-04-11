@@ -15,5 +15,8 @@ public class DokibirdMinecraftModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.ENTITY_CHONKY_GOON, ChonkyGoonRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.ENTITY_CHONKY_GOON, ChonkyGoonModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.ENTITY_LONG_GOON, LongGoonRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.ENTITY_LONG_GOON, LongGoonModel::getTexturedModelData);
     }
 }

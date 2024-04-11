@@ -5,6 +5,7 @@ import net.dragoons.dokimod.constants.EntityIds;
 import net.dragoons.dokimod.constants.Mod;
 import net.dragoons.dokimod.entities.custom.ChonkyGoonEntity;
 import net.dragoons.dokimod.entities.custom.DragoonEntity;
+import net.dragoons.dokimod.entities.custom.LongGoonEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -28,6 +29,14 @@ public class ModEntities {
             new Identifier(Mod.MOD_ID, EntityIds.ENTITY_CHONKY_GOON),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ChonkyGoonEntity::new)
                     .dimensions(EntityDimensions.fixed(1.6f, 1.6f))
+                    .build()
+    );
+
+    public static final EntityType<LongGoonEntity> ENTITY_LONG_GOON = Registry.register(
+            Registries.ENTITY_TYPE,
+            new Identifier(Mod.MOD_ID, EntityIds.ENTITY_LONG_GOON),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, LongGoonEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.7f, 1.6f))
                     .build()
     );
 

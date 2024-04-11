@@ -11,4 +11,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer ENTITY_CHONKY_GOON =
             new EntityModelLayer(new Identifier(Mod.MOD_ID, EntityIds.ENTITY_CHONKY_GOON), "main");
+
+    public static final EntityModelLayer ENTITY_LONG_GOON =
+            new EntityModelLayer(new Identifier(Mod.MOD_ID, EntityIds.ENTITY_LONG_GOON), "main");
 }
