@@ -32,6 +32,7 @@ public class DokibirdMinecraftMod implements ModInitializer {
 		// Loading entities
 		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_DRAGOON, DragoonEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_CHONKY_GOON, ChonkyGoonEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.ENTITY_LONG_GOON, ChonkyGoonEntity.createAttributes());
 		ModEntities.registerModEntities();
 	}
 }
