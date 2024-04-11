@@ -19,7 +19,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE,
             new Identifier(Mod.MOD_ID, EntityIds.ENTITY_DRAGOON),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DragoonEntity::new)
-                    .dimensions(EntityDimensions.fixed(1f, 1f))
+                    .dimensions(EntityDimensions.fixed(0.7f, 0.7f))
                     .build()
     );
 
@@ -27,7 +27,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE,
             new Identifier(Mod.MOD_ID, EntityIds.ENTITY_CHONKY_GOON),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ChonkyGoonEntity::new)
-                    .dimensions(EntityDimensions.fixed(1f, 1f))
+                    .dimensions(EntityDimensions.fixed(1.6f, 1.6f))
                     .build()
     );
 
