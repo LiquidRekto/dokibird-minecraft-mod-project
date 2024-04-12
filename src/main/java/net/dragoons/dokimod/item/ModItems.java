@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ITEM_DRAGOON_FEATHER = registerItem(ItemIds.ITEM_DRAGOON_FEATHER, new Item(new FabricItemSettings()));
-
+    public static final Item ITEM_DRAGOON_HORN = registerItem(ItemIds.ITEM_DRAGOON_HORN, new Item(new FabricItemSettings()));
     // Dragoon eggs
     public static final Item ITEM_DRAGOON_SPAWN_EGG = registerItem(ItemIds.ITEM_DRAGOON_SPAWN_EGG, new SpawnEggItem(
             ModEntities.ENTITY_DRAGOON, 0xC9B655, 0xBD8911, new FabricItemSettings()
@@ -46,6 +46,7 @@ public class ModItems {
     // For registering the items for the INGREDIENT item group
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ITEM_DRAGOON_FEATHER);
+        entries.add(ITEM_DRAGOON_HORN);
     }
 
     // For registering the items for the SPAWN EGG item group

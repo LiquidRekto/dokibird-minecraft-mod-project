@@ -18,21 +18,21 @@ public class LongGoonModel <T extends LongGoonEntity> extends SinglePartEntityMo
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
 		ModelPartData modelPartData = modelData.getRoot();
-		ModelPartData longGoonModel = modelPartData.addChild("longGoonModel", ModelPartBuilder.create().uv(0, 0).cuboid(-5.0F, -4.0F, -4.0F, 10.0F, 8.0F, 12.0F, new Dilation(0.0F))
-				.uv(25, 28).cuboid(-3.0F, -12.0F, -3.0F, 6.0F, 8.0F, 5.0F, new Dilation(0.0F))
-				.uv(0, 20).cuboid(-4.0F, -18.0F, -4.0F, 8.0F, 6.0F, 7.0F, new Dilation(0.0F))
-				.uv(0, 6).cuboid(-4.0F, 4.0F, -1.0F, 2.0F, 4.0F, 2.0F, new Dilation(0.0F))
-				.uv(0, 0).cuboid(2.0F, 4.0F, -1.0F, 2.0F, 4.0F, 2.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 16.0F, 0.0F));
+		ModelPartData longGoonModel = modelPartData.addChild("longGoonModel", ModelPartBuilder.create().uv(0, 0).cuboid(-5.0F, -4.0F, -6.0F, 10.0F, 8.0F, 12.0F, new Dilation(0.0F))
+				.uv(25, 28).cuboid(-3.0F, -12.0F, -5.0F, 6.0F, 8.0F, 5.0F, new Dilation(0.0F))
+				.uv(0, 20).cuboid(-4.0F, -18.0F, -6.0F, 8.0F, 6.0F, 7.0F, new Dilation(0.0F))
+				.uv(0, 6).cuboid(-4.0F, 4.0F, -3.0F, 2.0F, 4.0F, 2.0F, new Dilation(0.0F))
+				.uv(0, 0).cuboid(2.0F, 4.0F, -3.0F, 2.0F, 4.0F, 2.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 16.0F, 0.0F));
 
 		ModelPartData combSmall_r1 = longGoonModel.addChild("combSmall_r1", ModelPartBuilder.create().uv(32, 8).cuboid(-2.0F, -24.0F, -12.0F, 4.0F, 3.0F, 1.0F, new Dilation(0.0F))
-				.uv(23, 20).cuboid(-3.0F, -24.0F, -15.0F, 6.0F, 4.0F, 3.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -2.0F, -0.6109F, 0.0F, 0.0F));
+				.uv(23, 20).cuboid(-3.0F, -24.0F, -15.0F, 6.0F, 4.0F, 3.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -4.0F, -0.6109F, 0.0F, 0.0F));
 
-		ModelPartData tail_r1 = longGoonModel.addChild("tail_r1", ModelPartBuilder.create().uv(9, 33).cuboid(4.0F, -7.0F, 4.0F, 4.0F, 1.0F, 4.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -2.0F, -0.3038F, -0.762F, 0.2132F));
+		ModelPartData tail_r1 = longGoonModel.addChild("tail_r1", ModelPartBuilder.create().uv(9, 33).cuboid(4.0F, -7.0F, 4.0F, 4.0F, 1.0F, 4.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -4.0F, -0.3038F, -0.762F, 0.2132F));
 
 		ModelPartData lWing_r1 = longGoonModel.addChild("lWing_r1", ModelPartBuilder.create().uv(32, 0).cuboid(5.0F, -6.0F, 2.0F, 2.0F, 3.0F, 5.0F, new Dilation(0.0F))
-				.uv(0, 33).cuboid(-7.0F, -6.0F, 2.0F, 2.0F, 3.0F, 5.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -2.0F, 0.6109F, 0.0F, 0.0F));
+				.uv(0, 33).cuboid(-7.0F, -6.0F, 2.0F, 2.0F, 3.0F, 5.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 7.0F, -4.0F, 0.6109F, 0.0F, 0.0F));
 
-		ModelPartData beak_r1 = longGoonModel.addChild("beak_r1", ModelPartBuilder.create().uv(14, 38).cuboid(-1.0F, -15.0F, -6.0F, 2.0F, 2.0F, 2.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -1.0F, -10.0F, -0.7854F, 0.0F, 0.0F));
+		ModelPartData beak_r1 = longGoonModel.addChild("beak_r1", ModelPartBuilder.create().uv(14, 38).cuboid(-1.0F, -15.0F, -6.0F, 2.0F, 2.0F, 2.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -1.0F, -12.0F, -0.7854F, 0.0F, 0.0F));
 		return TexturedModelData.of(modelData, 64, 64);
 	}
 	@Override

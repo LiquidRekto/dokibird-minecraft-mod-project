@@ -13,6 +13,8 @@ public class ItemIds {
     // DRAGOON-RELATED
     public static final String ITEM_DRAGOON_FEATHER = "dragoon-feather";
 
+    public static final String ITEM_DRAGOON_HORN = "dragoon-horn";
+
     // =========================
     // SPAWN EGGS            |||
     // =========================
@@ -26,4 +28,5 @@ public class ItemIds {
     public static final String ITEM_FERAL_DRAGOON_SPAWN_EGG = "feral-dragoon-spawn-egg";
     public static final String ITEM_FERAL_CHONKY_GOON_SPAWN_EGG = "feral-chonky-goon-spawn-egg";
     public static final String ITEM_FERAL_LONG_GOON_SPAWN_EGG = "feral-long-goon-spawn-egg";
+
 }

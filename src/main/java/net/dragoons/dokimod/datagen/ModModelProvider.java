@@ -27,7 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ITEM_DRAGOON_FEATHER, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.ITEM_DRAGOON_HORN, Models.GENERATED);
         // Spawn Eggs
         // Dragoons
         itemModelGenerator.register(ModItems.ITEM_DRAGOON_SPAWN_EGG,
